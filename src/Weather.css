@@ -4,7 +4,7 @@
     color: rgb(134, 134, 134);   
     padding: 17px;
     border-radius: 5px;
-  max-width: 600px;
+
   margin: 30px auto;
 }
 
@@ -51,3 +51,7 @@ line-height: 29px;
             top: -32px;
             line-height: 1;
         }
+        .WeatherTemperature a {
+            text-decoration: none;
+        }
+        

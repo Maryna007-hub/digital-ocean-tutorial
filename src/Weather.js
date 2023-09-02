@@ -23,7 +23,7 @@ return (
         Clear
     </li>
 </ul>
-<div className="row">
+<div className="row mt-3">
  <div className="col-6">
     <div className="clearfix">
     <img src="https://openweathermap.org/img/wn/10d@2x.png" 
