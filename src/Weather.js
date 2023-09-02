@@ -25,7 +25,7 @@ function handleSubmit(event) {
 
 }
 function handleCityChange(event) {
-    
+    event.preventDefault();
 }
     if (weatherData.ready) {
         return (
@@ -49,7 +49,7 @@ function handleCityChange(event) {
     } else {
         const apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=
-        ${props.defaultCity}&units=metric&appid=${apiKey}`;
+        ${city}&units=metric&appid=${apiKey}`;
         axios.get(apiUrl).then(handleCityChange); 
         return "Loading...";
         }
