@@ -10,7 +10,9 @@ export default function Weather() {
        setWeatherData({
          temperature: response.data.main.temp,
          city: response.data.name,
-         wind: 12
+         wind: response.data.wind.sped,
+         humidity: response.data.main.humidity,
+         description: response.data.weather[0].description,
          })
         
         setReady(true);
@@ -41,8 +43,8 @@ export default function Weather() {
             <div className="row mt-3">
              <div className="col-6">
                 <div className="clearfix">
-                <img src="https://openweathermap.org/img/wn/10d@2x.png" 
-                alt="Clear" className="float-left"/>
+                <img src={weatherData.icoUrl}
+                alt={weatherData.description} className="float-left"/>
                 <div className="float-left">
                     <span className="temperature">{Math.round(weatherData.temperature)}</span>
                     <span className="unit">°C  °F</span>
@@ -53,7 +55,7 @@ export default function Weather() {
              <div className="col-6">
              <ul>
                 <li>
-                Humidity: 62%
+                Humidity: {weatherData.humidity}%
                 </li>
                 <li>
                 Wind: {weatherData.wind} km/h
