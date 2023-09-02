@@ -12,7 +12,7 @@ export default function Weather(props) {
          wind: response.data.wind.sped,
          humidity: response.data.main.humidity,
          description: response.data.weather[0].description,
-         icon: response.data.weather[0].icon,
+         iconUrl: "https://openweathermap.org/img/wn/10d@2x.png",
          date: "Monday 23:34",
          ready: true,
          })
@@ -43,7 +43,7 @@ export default function Weather(props) {
             <div className="row mt-3">
              <div className="col-6">
                 <div className="clearfix">
-                <img src={weatherData.icoUrl}
+                <img src={weatherData.iconUrl}
                 alt={weatherData.description} className="float-left"/>
                 <div className="float-left">
                     <span className="temperature">{Math.round(weatherData.temperature)}</span>
@@ -67,7 +67,6 @@ export default function Weather(props) {
              );  
     } else {
         const apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
-        let city = "Lisbon";
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=
         ${props.defaultCity}&units=metric&appid=${apiKey}`;
         axios.get(apiUrl).then(handleResponse); 
