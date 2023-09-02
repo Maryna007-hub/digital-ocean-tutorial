@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React and deploy normal
+          Learn React and deploy normal normal
         </a>
         <h1>I want to deploy</h1>
       </header>
