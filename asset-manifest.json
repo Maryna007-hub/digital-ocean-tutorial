@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/digital-ocean-tutorial/static/css/main.a72ad45d.css",
-    "main.js": "/digital-ocean-tutorial/static/js/main.fc5bfd58.js",
+    "main.js": "/digital-ocean-tutorial/static/js/main.1ba692ae.js",
     "static/js/787.402c6fbf.chunk.js": "/digital-ocean-tutorial/static/js/787.402c6fbf.chunk.js",
     "index.html": "/digital-ocean-tutorial/index.html",
     "main.a72ad45d.css.map": "/digital-ocean-tutorial/static/css/main.a72ad45d.css.map",
-    "main.fc5bfd58.js.map": "/digital-ocean-tutorial/static/js/main.fc5bfd58.js.map",
+    "main.1ba692ae.js.map": "/digital-ocean-tutorial/static/js/main.1ba692ae.js.map",
     "787.402c6fbf.chunk.js.map": "/digital-ocean-tutorial/static/js/787.402c6fbf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a72ad45d.css",
-    "static/js/main.fc5bfd58.js"
+    "static/js/main.1ba692ae.js"
   ]
 }
