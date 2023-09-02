@@ -4,10 +4,16 @@ import  axios  from "axios";
 
 export default function Weather() {
     const [ready, setReady] = useState(false);
-    const [temoerature, setTempetature] = useState(null);
+    const [weatherData, setWeatherData] = useState({});
     function handleResponse(response) {
-        console.log(response.data);
-        setTemperature(response.data.main.temp);
+    
+       setWeatherData({
+         temperature: response.data.main.temp,
+         city: response.data.name,
+         wind: 12
+         })
+        
+        setReady(true);
     }
 
     if (ready) {
@@ -23,13 +29,13 @@ export default function Weather() {
                 </div>
             </div>
             </form>
-            <h1> Lisbon</h1>
+            <h1>{weatherData.city}</h1>
             <ul>
                 <li>
                     Monday 20:00
                 </li>
                 <li>
-                    Clear
+                    {weatherData.description}
                 </li>
             </ul>
             <div className="row mt-3">
@@ -38,7 +44,7 @@ export default function Weather() {
                 <img src="https://openweathermap.org/img/wn/10d@2x.png" 
                 alt="Clear" className="float-left"/>
                 <div className="float-left">
-                    <span className="temperature">{temoerature}</span>
+                    <span className="temperature">{Math.round(weatherData.temperature)}</span>
                     <span className="unit">°C  °F</span>
                 
                 </div>
@@ -50,7 +56,7 @@ export default function Weather() {
                 Humidity: 62%
                 </li>
                 <li>
-                Wind: 11 km/h
+                Wind: {weatherData.wind} km/h
                 </li>
             </ul>
              </div>
