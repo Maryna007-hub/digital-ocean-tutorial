@@ -25,8 +25,15 @@ return (
 </ul>
 <div className="row">
  <div className="col-6">
-    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Clear"/>
-    6°C  °F
+    <div className="clearfix">
+    <img src="https://openweathermap.org/img/wn/10d@2x.png" 
+    alt="Clear" className="float-left"/>
+    <div className="float-left">
+        <span className="temperature">6</span>
+        <span className="unit">°C  °F</span>
+    
+    </div>
+ </div>
  </div>
  <div className="col-6">
  <ul>
