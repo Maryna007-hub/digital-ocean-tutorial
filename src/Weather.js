@@ -3,8 +3,7 @@ import "./Weather.css";
 import  axios  from "axios";
 
 export default function Weather() {
-    const [ready, setReady] = useState(false);
-    const [weatherData, setWeatherData] = useState({});
+    const [weatherData, setWeatherData] = useState({readt: false});
     function handleResponse(response) {
     
        setWeatherData({
@@ -13,12 +12,12 @@ export default function Weather() {
          wind: response.data.wind.sped,
          humidity: response.data.main.humidity,
          description: response.data.weather[0].description,
+         date: "Monday 23:34",
+         ready: true,
          })
-        
-        setReady(true);
     }
 
-    if (ready) {
+    if (weatherData.ready) {
         return (
             <div className="Weather"> 
             <form>
@@ -34,7 +33,7 @@ export default function Weather() {
             <h1>{weatherData.city}</h1>
             <ul>
                 <li>
-                    Monday 20:00
+                    {weatherData.date}
                 </li>
                 <li className="text-capitalize">
                     {weatherData.description}
