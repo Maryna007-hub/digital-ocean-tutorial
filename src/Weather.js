@@ -12,6 +12,23 @@ return (<div className="Weather">
         Clear
     </li>
 </ul>
+<div className="row">
+ <div className="col-6">
+    <img src="" alt="Clear"/>
+    6°C  °F
+ </div>
+ <div className="col-6">
+ <ul>
+    <li>
+    Humidity: 62%
+    </li>
+    <li>
+    Wind: 11 km/h
+    </li>
+</ul>
+ </div>
 </div>
+</div>
+
     );
 }
