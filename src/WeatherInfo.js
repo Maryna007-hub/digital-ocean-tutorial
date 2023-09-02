@@ -1,4 +1,8 @@
 import  React  from "react";
 export default function WeatherInfo () {
-    return "Info";
+    return (
+        <div className="WeatherInfo">
+            
+        </div>
+    );
 }
