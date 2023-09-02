@@ -19,7 +19,10 @@ export default function Weather(props) {
          ready: true,
          })
     }
+function handleSubmit(event) {
+    event.preventDefault();
 
+}
     if (weatherData.ready) {
         return (
             <div className="Weather"> 
@@ -28,7 +31,8 @@ export default function Weather(props) {
                 <div className="col-9">
                     <input type="search" placeholder="Enter a city..." 
                     className="form-control"
-                    autoFocus="on"/>
+                    autoFocus="on"
+                    onChange={handleSubmit}/>
                 </div>
                 <div className="col-3">
                     <input type="submit" value="Search" className="btn btn-primary w-100"/>
