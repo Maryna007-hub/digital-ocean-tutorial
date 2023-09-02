@@ -54,7 +54,7 @@ function handleCityChange(event) {
             </div>
              );  
     } else {
-      
+      search();
         return "Loading...";
         }
 }
