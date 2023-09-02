@@ -13,7 +13,7 @@ export default function Weather(props) {
          description: response.data.weather[0].description,
          wind: response.data.wind.speed,
          iconUrl: "https://openweathermap.org/img/wn/10d@2x.png",
-         date: "Monday 23:34",
+         date: new Date(response.data.dt * 1000),
          ready: true,
          })
     }
@@ -59,7 +59,7 @@ export default function Weather(props) {
                 Humidity: {weatherData.humidity}%
                 </li>
                 <li>
-                Wind: {Math.round(weatherData.wind)}km/h
+                Wind: {weatherData.wind} km/h
                 </li>
             </ul>
              </div>
