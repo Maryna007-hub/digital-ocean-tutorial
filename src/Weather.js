@@ -14,7 +14,7 @@ return (<div className="Weather">
 </ul>
 <div className="row">
  <div className="col-6">
-    <img src="" alt="Clear"/>
+    <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="Clear"/>
     6°C  °F
  </div>
  <div className="col-6">
