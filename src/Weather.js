@@ -34,7 +34,7 @@ export default function Weather(props) {
             </form>
             <h1>{weatherData.city}</h1>
             <ul>
-                <li></li>
+                <li>{weatherData.date.getDay()}</li>
                 <li className="text-capitalize">
                     {weatherData.description}
                 </li>
