@@ -1,26 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
+import './App.css';
+export default function App() {
+ return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+       <div className="container">
+        <weather default city="Oslo"/>
+        <footer>
+          This project was coded by 
+          <a href='/'>Maryna Holinka</a>
+          amd is 
+        <a href='https://github.com/Maryna007-hub/digital-ocean-tutorial'
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React and deploy normal normal
+          rel="noopener noreferrer">
+     open-soursed on GitHub
         </a>
-        <h1>I want to deploy</h1>
-      </header>
+        </footer>
+        </div>
     </div>
   );
-}
+ }
 
-export default App;
+
