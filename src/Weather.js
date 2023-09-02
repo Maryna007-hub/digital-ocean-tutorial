@@ -9,9 +9,9 @@ export default function Weather(props) {
        setWeatherData({
          temperature: response.data.main.temp,
          city: response.data.name,
-         wind: response.data.wind.sped,
          humidity: response.data.main.humidity,
          description: response.data.weather[0].description,
+         wind: response.data.wind.speed,
          iconUrl: "https://openweathermap.org/img/wn/10d@2x.png",
          date: "Monday 23:34",
          ready: true,
@@ -24,7 +24,8 @@ export default function Weather(props) {
             <form>
             <div className="row">
                 <div className="col-9">
-                    <input type="search" placeholder="Enter a city..." className="form-control"/>
+                    <input type="search" placeholder="Enter a city..." 
+                    className="form-control"/>
                 </div>
                 <div className="col-3">
                     <input type="submit" value="Search" className="btn btn-primary w-100"/>
@@ -58,7 +59,7 @@ export default function Weather(props) {
                 Humidity: {weatherData.humidity}%
                 </li>
                 <li>
-                Wind: {weatherData.wind} km/h
+                Wind: {Math.round(weatherData.wind)}km/h
                 </li>
             </ul>
              </div>
