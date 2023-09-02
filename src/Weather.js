@@ -36,7 +36,7 @@ export default function Weather() {
                 <li>
                     Monday 20:00
                 </li>
-                <li>
+                <li className="text-capitalize">
                     {weatherData.description}
                 </li>
             </ul>
