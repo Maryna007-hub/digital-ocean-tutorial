@@ -28,14 +28,15 @@ line-height: 29px;
     }
     .Weather canvas {
         height: 64px;
-        width: 76px;
+        width: 64px;
         float: left;
-        margin-right: 5px;
+        margin-right: 9px;
+      
         }
         .Weather .temperature {
         font-weight: bold;
         color: rgb(33, 33, 33);
-        font-size: 58px;
+        font-size: 54px;
         font-weight: 400;
         line-height: 60px;
         }
@@ -44,9 +45,9 @@ line-height: 29px;
             color: rgb(33, 33, 33);
             font-size: 18px;
             font-weight: 400;
-            margin-left: 2px;
+            margin-left: 1px;
             position: relative;
-            top: -32px;
+            top: -28px;
             line-height: 1;
         }
         .WeatherTemperature a {
