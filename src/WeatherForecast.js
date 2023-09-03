@@ -3,7 +3,7 @@ import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecast.css";
 
 export default function WeatherForecast() {
-const apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
+let apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
 let apiUrl = `https://api.openweathermap.org/data/2.5/
 onecall?lat={lat}&lon={lon}&exclude={part}&appid=${apiKey}`
 
