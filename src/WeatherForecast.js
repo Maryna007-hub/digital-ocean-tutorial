@@ -8,7 +8,8 @@ export default function WeatherForecast() {
   function handleResponse(response) {
     console.log(response.data);
   }
-  let apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
+  let apiKey = "54a9676t748bf02180eeec66a4o3f2ce";
+  // "df04a6426eb8c9305ebb65c9deb52f35";
   let longitude = 10.99;
   let latitude = 44.34;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
