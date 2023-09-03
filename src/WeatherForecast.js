@@ -1,11 +1,12 @@
 import  React  from "react";
 import WeatherIcon from "./WeatherIcon";
+import "./WeatherForecast.css";
 
 export default function WeatherForecast(params) {
     return (
         <div className="WeatherForecast">
             <div className="row">
-                <div className="col">
+                <div className="col-2">
                    <div className="WeatherForecast-day">Mon</div> 
                      <WeatherIcon code="09n"/> 
                       <div className="WeatherForecast-temperature">
