@@ -4,6 +4,9 @@ import "./WeatherForecast.css";
 import axios from "axios";
 
 export default function WeatherForecast() {
+    function handleResponse(response) {
+        console.log(response.data)
+    }
 let apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
 let longitude = 40.7;
 let latitude = 74;
