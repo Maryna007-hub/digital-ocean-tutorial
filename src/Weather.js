@@ -51,6 +51,7 @@ function handleCityChange(event) {
             </div>
             </form>
             <WeatherInfo data={weatherData}/>
+            <WeatherForecast />
             </div>
              );  
     } else {
