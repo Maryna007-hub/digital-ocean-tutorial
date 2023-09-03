@@ -5,6 +5,7 @@ import axios from "axios";
 
 export default function WeatherForecast(props) {
     let [loaded, setLoaded] = useState(false);
+    let [forecast, setForecast] = useState(false);
     function handleResponse(response) {
         console.log(response.data);
     }
