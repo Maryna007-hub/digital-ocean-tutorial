@@ -26,9 +26,9 @@ line-height: 29px;
     line-height: 19px;
     list-style: none;
     }
-    .Weather img {
-        height: 74px;
-        width: 74px;
+    .Weather canvas {
+        height: 64px;
+        width: 76px;
         float: left;
         margin-right: 5px;
         }
