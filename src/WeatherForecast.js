@@ -4,9 +4,7 @@ import "./WeatherForecast.css";
 
 
 export default function WeatherForecast() {
-
-   
-     return (
+return (
         <div className="WeatherForecast">
             <div className="row">
                 <div className="col-2">
