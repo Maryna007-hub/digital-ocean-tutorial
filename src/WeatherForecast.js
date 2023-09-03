@@ -6,7 +6,7 @@ import axios from "axios";
 
 export default function WeatherForecast(props) {
   function handleResponse(response) {
-    console.log(response.data);
+    // console.log(response.data);
   }
   console.log(props);
   let apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
