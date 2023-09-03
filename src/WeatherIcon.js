@@ -9,8 +9,15 @@ export default function WeatherIcon(props) {
     size={64}
     animate={true}
   />
- )
+ );
 } else {
-    
+    return (
+        <ReactAnimatedWeather
+        icon='CLEAR_NIGHT'
+        color='darkblue'
+        size={64}
+        animate={true}
+      />
+     );  
 }
 }
