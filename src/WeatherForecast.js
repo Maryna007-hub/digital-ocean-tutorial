@@ -11,7 +11,6 @@ export default function WeatherForecast(props) {
       setLoaded(true);
     }
 if (loaded) {
-    console.log(forecast);
     return (
         <div className="WeatherForecast">
             <div className="row">
@@ -19,8 +18,10 @@ if (loaded) {
                    <div className="WeatherForecast-day">Mon</div> 
                      <WeatherIcon code="09n" size={36} /> 
                       <div className="WeatherForecast-temperature">
-                        <span className="WeatherForecast-temperature-max">19</span>
-                        <span className="WeatherForecast-temperature-min">11</span>
+                        <span className="WeatherForecast-temperature-max">
+                            {forecast[0].temp.max}°</span>
+                        <span className="WeatherForecast-temperature-min">
+                            11°</span>
                       </div>
                    </div>
             </div>
