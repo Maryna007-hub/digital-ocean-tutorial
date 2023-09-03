@@ -2,7 +2,7 @@ import  React  from "react";
 import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecast.css";
 
-export default function WeatherForecast(params) {
+export default function WeatherForecast() {
     return (
         <div className="WeatherForecast">
             <div className="row">
