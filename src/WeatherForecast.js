@@ -12,7 +12,7 @@ let [forecast, setForecast] = useState(null);
  setLoaded(true);
    }
    if (loaded) {
-    
+    console.log(forecast);
      return (
         <div className="WeatherForecast">
             <div className="row">
@@ -21,7 +21,7 @@ let [forecast, setForecast] = useState(null);
                      <WeatherIcon code="09n" size={36} /> 
                       <div className="WeatherForecast-temperature">
                         <span className="WeatherForecast-temperature-max">
-                          {forecast[0].temp.max}°</span>
+                         16°</span>
                         <span className="WeatherForecast-temperature-min">
                         5°</span>
                       </div>
