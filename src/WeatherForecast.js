@@ -9,9 +9,10 @@ let [forecast, setForecast] = useState(null);
 
     function handleResponse(response) {
  setForecast(response.data.daily);
+ setLoaded(true);
    }
    if (loaded) {
-    console.log()
+    
      return (
         <div className="WeatherForecast">
             <div className="row">
@@ -20,7 +21,7 @@ let [forecast, setForecast] = useState(null);
                      <WeatherIcon code="09n" size={36} /> 
                       <div className="WeatherForecast-temperature">
                         <span className="WeatherForecast-temperature-max">
-                          18°</span>
+                          {forecast[0].temp.max}°</span>
                         <span className="WeatherForecast-temperature-min">
                         5°</span>
                       </div>
