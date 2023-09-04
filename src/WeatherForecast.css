@@ -3,6 +3,9 @@
     margin-top: 20px;
     color: rgb(15, 15, 15);
 }
+.Weatherforecast-day {
+    text-align: center;
+}
 .Weatherforecast-temperature-min {
     opacity: 0.6;
     margin-left: 5px;
