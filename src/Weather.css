@@ -27,18 +27,18 @@ line-height: 29px;
     list-style: none;
     }
     .Weather canvas {
-        height: 64px;
-        width: 64px;
-        float: left;
-        margin-right: 9px;
+        margin: 10px auto;
       
-        }
+        float: left;
+       
+      }
         .Weather .temperature {
         font-weight: bold;
         color: rgb(33, 33, 33);
         font-size: 54px;
         font-weight: 400;
         line-height: 60px;
+        margin-left: 10px;
         }
         .Weather .unit {
             font-weight: 500;

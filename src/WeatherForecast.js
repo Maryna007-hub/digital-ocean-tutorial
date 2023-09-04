@@ -18,7 +18,7 @@ export default function WeatherForecast(props) {
     return (
         <div className="WeatherForecast">
           <div className="row">
-             <div className="col">
+             <div className="col-2">
                 <WeatherForecastDay data={forecast[0]}/>
              </div>
             
