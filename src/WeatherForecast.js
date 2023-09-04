@@ -17,16 +17,18 @@ export default function WeatherForecast(props) {
     return (
       <div className="WeatherForecast">
           <div className="row">
-              <div className="col-2">
-                <WeatherForecastDay data={forecast[0]}/>
-                
-                 </div>
+{forecast.map(function(dailyForecast, index){
+return (
+         <div className="col-2" key={index}>
+            <WeatherForecastDay data={dailyForecast}/>
+          </div>
+)
+})}
           </div>
       </div>
   ); 
   } else {
   let apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
- 
   let longitude = props.coordinates.lon;
   let latitude = props.coordinates.lat;
   let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
