@@ -27,14 +27,9 @@ line-height: 29px;
     list-style: none;
     }
     .Weather canvas {
-        height: 64px;
-        width: 64px;
-   
-        margin-right: 9px;
-       
-        
-       
-      }
+        height: 54px;
+        width: 54px;
+   }
         .Weather .temperature {
         font-weight: bold;
         color: rgb(33, 33, 33);
