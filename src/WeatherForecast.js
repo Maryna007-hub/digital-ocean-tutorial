@@ -15,18 +15,20 @@ export default function WeatherForecast(props) {
   if (loaded) {
     console.log(forecast);
     return (
-      <div className="WeatherForecast">
+        <div className="WeatherForecast">
           <div className="row">
-{forecast.map(function(dailyForecast, index){
-return (
-         <div className="col-2" key={index}>
-            <WeatherForecastDay data={dailyForecast}/>
+            {forecast.map(function(dailyForecast, index){
+              if (index < 5) {
+                return (
+                 <div className="col-2" key={index}>
+                    <WeatherForecastDay data={dailyForecast}/>
+                 </div>
+                );
+              }
+            })}
           </div>
-)
-})}
-          </div>
-      </div>
-  ); 
+        </div>
+      ); 
   } else {
   let apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
   let longitude = props.coordinates.lon;
