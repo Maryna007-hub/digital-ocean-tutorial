@@ -29,6 +29,7 @@ line-height: 29px;
     .Weather canvas {
         height: 54px;
         width: 54px;
+        float: left;
    }
         .Weather .temperature {
         font-weight: bold;
