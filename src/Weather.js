@@ -21,6 +21,7 @@ export default function Weather(props) {
          coordinates: response.data.coord,
          ready: true,
          })
+         // console.log(response)
     }
     function search() {
         const apiKey = "df04a6426eb8c9305ebb65c9deb52f35";
